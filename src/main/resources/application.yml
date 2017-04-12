@@ -5,19 +5,19 @@ server:
 # 数据库 及 Redis 配置
 spring:
   redis:
-    host: [Redis服务器地址]
-    port: [Redis端口号]
-    password: [Redis客户端密码]
+    host: 127.0.0.1
+    port: 6379
+    # password: [Redis客户端密码]
   datasource:
-    url: [数据库连接地址]
+    url: 127.0.0.1
     driver-class-name: org.mariadb.jdbc.Driver
-    username: [数据库账号]
-    password: [数据库密码]
+    username: root
+    password: wanglong
     sql-script-encoding: utf-8
   mail:
-    host: [邮件提供方地址]
-    username: [邮箱账号]
-    password: [邮箱密码]
+    host: smtp.qq.com
+    username: 1968155152@qq.com
+    password: ahtfwhaprmyggjef
     properties:
       mail:
         smtp:
@@ -37,5 +37,5 @@ redis:
 
 # 本站信息
 app:
-  name: [网站名称]
-  domain: [网站域名]
+  name: ictgu
+  domain: www.triangleidea.com
